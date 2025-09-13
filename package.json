@@ -10,7 +10,7 @@
     "dev": "node src/server/index.js",
     "start": "STATIC_DIR=dist node src/server/index.js",
     "build": "node scripts/build.js",
-    "test": "node tests/smoke.test.js && node tests/server.test.js && node tests/integration/server.integration.test.js",
+    "test": "node --test",
     "ci": "npm ci && npm run lint && npm test",
     "lint": "eslint \"**/*.js\" --max-warnings=0",
     "lint:fix": "eslint \"**/*.js\" --fix",
