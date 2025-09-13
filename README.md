@@ -1,4 +1,5 @@
 # Aviation Game
+![CI](https://github.com/calvinorr/Aviator/actions/workflows/ci.yml/badge.svg)
 
 A small starter skeleton for an Aviation-themed web app that can query the AviationStack API and serve a tiny frontend. This repo is intended as a lightweight foundation for building data-driven games and experiments.
 
