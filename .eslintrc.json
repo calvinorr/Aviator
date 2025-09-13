@@ -1,0 +1,28 @@
+{
+  "root": true,
+  "env": {
+    "es2023": true,
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2023,
+    "sourceType": "module"
+  },
+  "ignorePatterns": ["dist/", "node_modules/"],
+  "extends": [],
+  "rules": {
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
+    "no-console": "off",
+    "eqeqeq": ["error", "always"],
+    "prefer-const": "error"
+  },
+  "overrides": [
+    {
+      "files": ["tests/**/*.js"],
+      "env": { "node": true },
+      "rules": { "no-unused-expressions": "off" }
+    }
+  ]
+}
+

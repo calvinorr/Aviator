@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aviation Game</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 2rem; }
+      .badge { display: inline-block; padding: 0.25rem 0.5rem; background: #eef; border: 1px solid #ccd; border-radius: 6px; }
+      code { background: #f6f8fa; padding: 0.1rem 0.25rem; border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <h1>✈️ Aviation Game</h1>
+    <p class="badge">Starter skeleton — static served by Node</p>
+    <section>
+      <label for="flight">Flight IATA:</label>
+      <input id="flight" placeholder="e.g., AA100" value="AA100" />
+      <button id="lookup">Lookup</button>
+    </section>
+    <div id="status"></div>
+    <pre id="result" style="background:#f6f8fa;padding:1rem;border-radius:6px;overflow:auto"></pre>
+    <p style="margin-top:1rem;">
+      Edit <code>src/client/main.js</code> and <code>src/server/server.js</code>. Build with <code>npm run build</code>, then <code>npm run start</code>.
+    </p>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+  </html>

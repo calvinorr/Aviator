@@ -1,0 +1,24 @@
+{
+  "name": "aviation-game",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "node src/server/index.js",
+    "start": "STATIC_DIR=dist node src/server/index.js",
+    "build": "node scripts/build.js",
+    "test": "node tests/smoke.test.js && node tests/server.test.js && node tests/integration/server.integration.test.js",
+    "ci": "npm ci && npm run lint && npm test",
+    "lint": "eslint \"**/*.js\" --max-warnings=0",
+    "lint:fix": "eslint \"**/*.js\" --fix",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css,html}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md,css,html}\""
+  },
+  "devDependencies": {
+    "eslint": "^9.9.0",
+    "prettier": "^3.3.3"
+  }
+}
